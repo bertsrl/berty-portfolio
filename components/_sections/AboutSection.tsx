@@ -33,8 +33,6 @@ export default function AboutSection() {
           className="rounded-11xl w-[930px] h-[504px] object-cover"
           alt=""
           src="/rectangle-11@2x.png"
-          width={930}
-          height={504}
         />
         <div>
           <div className="text-base font-dm-sans grid place-items-center">
@@ -46,8 +44,6 @@ export default function AboutSection() {
             className="w-[756px] h-[132px]"
             alt=""
             src="/group-4.svg"
-            width={756}
-            height={132}
           />
         </div>
       </div>
