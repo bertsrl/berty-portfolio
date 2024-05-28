@@ -1,0 +1,36 @@
+@import "./variables.css";
+
+.bloom-border {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+    border: 5px solid black;
+  }
+  
+  .bloom-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 200%;
+    background: linear-gradient(to right, var(--antiflash-white),var(--poly-blue), var(--bice-blue), var(--antiflash-white));
+    background-size: 25% 100%;
+    animation: border-bloom 5s linear infinite;
+    animation-play-state: running;
+  }
+
+  
+  @keyframes border-bloom {
+    to {
+      transform: translate(-20%, 0%);
+    }
+  }

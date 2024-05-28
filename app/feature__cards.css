@@ -1,0 +1,12 @@
+.feature-card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.featured-cards:hover > .feature-card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.feature-card {
+    transition: 400ms;
+}

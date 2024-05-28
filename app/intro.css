@@ -1,0 +1,28 @@
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    color: #402d2d;
+  }
+  
+  .ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    font-size: 5rem !important;
+  }
+  
+  .ml5 .ampersand {
+    font-family: "AeonikTRIAL-Bold";
+    font-style: italic;
+    font-weight: 400;
+    width: 1em;
+    margin-right: -0.1em;
+    margin-left: -0.1em;
+  }
+  
+  .ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+  }

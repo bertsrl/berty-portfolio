@@ -1,0 +1,64 @@
+.btn {
+    position: relative;
+    background-color: #2a2a2a; // Equivalent to bg-neutral-800
+    height: 4rem; // Equivalent to h-16
+    width: 16rem; // Equivalent to w-64
+    border: 1px solid #e5e7eb; // Default border color in Tailwind
+    text-align: left;
+    padding: 0.75rem; // Equivalent to p-3
+    color: #f9fafb; // Equivalent to text-gray-50
+    font-size: 1rem; // Equivalent to text-base
+    font-weight: 700; // Equivalent to font-bold
+    border-radius: 0.5rem; // Equivalent to rounded-lg
+    overflow: hidden;
+    text-decoration: underline;
+    text-underline-offset: 0.125rem; // Equivalent to underline-offset-2
+    transition: all 0.5s; // Equivalent to duration-500
+  
+    &:hover {
+      border-color: #fca5a5; // Equivalent to hover:border-rose-300
+      text-decoration: underline;
+      text-underline-offset: 0.25rem; // Equivalent to hover:underline-offset-4
+      text-decoration-thickness: 0.125rem; // Equivalent to hover:decoration-2
+      color: #fca5a5; // Equivalent to hover:text-rose-300
+  
+      &:before {
+        right: 3rem; // Equivalent to hover:before:right-12
+        bottom: -2rem; // Equivalent to hover:before:-bottom-8
+        box-shadow: 20px 20px 20px 30px #a21caf; // Equivalent to hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf]
+        filter: blur(8px); // Equivalent to hover:before:blur
+      }
+  
+      &:after {
+        right: -2rem; // Equivalent to hover:after:-right-8
+      }
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      width: 3rem; // Equivalent to before:w-12
+      height: 3rem; // Equivalent to before:h-12
+      right: 0.25rem; // Equivalent to before:right-1
+      top: 0.25rem; // Equivalent to before:top-1
+      z-index: 10; // Equivalent to before:z-10
+      background-color: #8b5cf6; // Equivalent to before:bg-violet-500
+      border-radius: 50%; // Equivalent to before:rounded-full
+      filter: blur(8px); // Equivalent to before:blur-lg
+      transition: all 0.5s; // Equivalent to before:duration-500
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      width: 5rem; // Equivalent to after:w-20
+      height: 5rem; // Equivalent to after:h-20
+      right: 2rem; // Equivalent to after:right-8
+      top: 0.75rem; // Equivalent to after:top-3
+      z-index: 10; // Equivalent to after:z-10
+      background-color: #fca5a5; // Equivalent to after:bg-rose-300
+      border-radius: 50%; // Equivalent to after:rounded-full
+      filter: blur(8px); // Equivalent to after:blur-lg
+      transition: all 0.5s; // Equivalent to after:duration-500
+    }
+  }

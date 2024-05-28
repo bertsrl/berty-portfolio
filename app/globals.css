@@ -1,6 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "./fonts.css";
+@import "./border.css";
+@import "./background.css";
+@import "./feature-cards.css";
+@import "./feature__cards.css";
+@import "./projects.css";
+@import "./navbar.css";
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -21,10 +28,11 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+    rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+  margin: 0 auto;
+  }
 
 @layer utilities {
   .text-balance {
