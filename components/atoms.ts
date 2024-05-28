@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import { atom } from "jotai"
 
-export const switcher = atom(1);
+export const switcher = atom(0);
 
 export const useScreenSize = () => {
     const [screenSize, setScreenSize] = useState({
